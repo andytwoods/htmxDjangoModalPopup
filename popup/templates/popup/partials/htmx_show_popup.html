@@ -1,0 +1,11 @@
+<div class="modal-body">
+    <h1>{{ show.name }}</h1>
+<img src="{{ show.image_url }}" alt="show image">
+    <div>{{ show.blurb }}</div>
+</div>
+
+<script>
+    var myModalEl = document.getElementById('myModal');
+    var modal = bootstrap.Modal.getInstance(myModalEl);
+    modal.toggle();
+</script>
